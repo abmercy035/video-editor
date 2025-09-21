@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing Roadmap</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .phase-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+        }
+        .unit-card {
+            background-color: #f8fafc;
+            border-left: 4px solid #f97316; /* Orange border for emphasis */
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .activity-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+        .activity-item input[type="checkbox"] {
+            margin-top: 0.25rem;
+            margin-right: 0.75rem;
+            min-width: 1.25rem;
+            min-height: 1.25rem;
+            accent-color: #f97316;
+            cursor: pointer;
+        }
+        .activity-content {
+            flex-grow: 1;
+        }
+        .link-text {
+            color: #ea580c; /* Orange color for links */
+            text-decoration: none;
+        }
+        .link-text:hover {
+            text-decoration: underline;
+        }
+        .header-section {
+            background: linear-gradient(to right, #f97316, #fb923c); /* Gradient header */
+            color: white;
+            padding: 2rem 1.5rem;
+            border-radius: 0.75rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .motivation-card {
+            background-color: #fffbeb; /* Light yellow background */
+            border-left: 4px solid #facc15; /* Yellow border */
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            font-style: italic;
+        }
+        .llm-feature-box {
+            background-color: #fef9e7; /* Very light yellow */
+            border: 1px solid #facc15;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .llm-button {
+            background-color: #ea580c;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: background-color 0.2s ease-in-out;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .llm-button:hover {
+            background-color: #c2410c;
+        }
+        .llm-output {
+            background-color: #ffffff;
+            border: 1px solid #fcd34d;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-top: 1rem;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            min-height: 50px;
+        }
+        .llm-input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #fde68a;
+            border-radius: 0.375rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .loading-indicator {
+            display: none;
+            margin-top: 0.5rem;
+            color: #ea580c;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header-section">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-2">The Complete Video Editing Roadmap</h1>
+            <p class="text-lg sm:text-xl">Your Path from Beginner to Professional Editor</p>
+            <p class="text-sm mt-4 opacity-80">Track your progress below!</p>
+        </div>
+
+        <!-- Phase 1: The Absolute Basics (0-2 Months) -->
+        <div class="phase-card">
+            <h2 class="text-2xl font-semibold text-orange-700 mb-4">Phase 1: The Absolute Basics (0-2 Months)</h2>
+            <p class="mb-4 text-gray-600">Goal: Understand the core concepts and get comfortable with your software's user interface. This is the foundation for everything else.</p>
+
+            <div class="unit-card">
+                <h3 class="text-xl font-medium text-orange-600 mb-2">Unit 1.1: The Core Workflow</h3>
+                <p class="mb-2 text-gray-700">What to learn: The universal steps behind every video production. </p>
+                <div class="activity-item">
+                    <input type="checkbox" id="p1u1a1">
+                    <label for="p1u1a1" class="activity-content">
+                        <strong>Pre-Production (Planning):</strong> The "thinking" stage.
+                        <ul>
+                            <li><strong>Why it matters:</strong> A good plan saves hours of editing. A story idea, a script, or even a simple bullet point list is a plan.</li>
+                            <li><strong>Your first task:</strong> Think of a simple story, like "A day in my life" or "How to make a sandwich." Film 5-10 short clips on your phone to match that story.</li>
+                        </ul>
+                    </label>
+                </div>
+                <div class="activity-item">
+                    <input type="checkbox" id="p1u1a2">
+                    <label for="p1u1a2" class="activity-content">
+                        <strong>Production (Filming):</strong> The "doing" stage.
+                        <ul>
+                            <li><strong>Why it matters:</strong> Good footage makes editing easy. Don't worry about perfection, but try to keep your phone steady.</li>
+                        </ul>
+                    </label>
+                </div>
+                <div class="activity-item">
+                    <input type="checkbox" id="p1u1a3">
+                    <label for="p1u1a3" class="activity-content">
+                        <strong>Post-Production (Editing):</strong> The "shaping" stage.
+                        <ul>
+                            <li><strong>Why it matters:</strong> This is where you combine everything you filmed to tell your story in the best way possible.</li>
+                            <li><strong>Your first task:</strong> Download the free version of <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" class="link-text">DaVinci Resolve</a>. It's a professional tool that is completely free.</li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+
+            <div class="unit-card">
+                <h3 class="text-xl font-medium text-orange-600 mb-2">Unit 1.2: Mastering the Software Interface</h3>
+                <p class="mb-2 text-gray-700">What to learn: The three key areas of every editing program.</p>
+                <div class="activity-item">
+                    <input type="checkbox" id="p1u2a1">
+                    <label for="p1u2a1" class="activity-content">
+                        <strong>The Media Pool:</strong> This is your digital cabinet for all your footage, photos, and music.
+                        <ul>
+                            <li><strong>How to do it:</strong> Drag your video clips from your computer into this area inside DaVinci Resolve.</li>
+                        </ul>
+                    </label>
+                </div>
+                <div class="activity-item">
+                    <input type="checkbox" id="p1u2a2">
+                    <label for="p1u2a2" class="activity-content">
+                        <strong>The Timeline:</strong> This is your workspace where you arrange your clips to tell a story. 
+                        <ul>
+                            <li><strong>How to do it:</strong> Drag a few clips from your Media Pool down to the timeline. Arrange them in the order you want.</li>
+                        </ul>
+                    </label>
+                </div>
+                <div class="activity-item">
+                    <input type="checkbox" id="p1u2a3">
+                    <label for="p1u2a3" class="activity-content">
+                        <strong>Basic Cuts and Trims:</strong> This is your most-used tool.
+                        <ul>
+                            <li><strong>How to do it:</strong> Click on a clip in the timeline. Hover over the edges of the clip until your cursor changes. Click and drag the edge to shorten or lengthen the clip.</li>
+                            <li><strong>YouTube Recommendation:</strong> Watch "DaVinci Resolve: The First 10 Minutes" by <a href="https://www.youtube.com/channel/UCb2Vn91F26i0y90tqR1bC5A" target="_blank" class="link-text">Casey Faris</a> for a great overview.</li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 2: Intermediate Skills (2-6 Months) -->
+        <div class="phase-card">
+            <h2 class="text-2xl font-semibold text-orange-700 mb-4">Phase 2: Intermediate Skills (2-6 Months)</h2>
+            <p class="mb-4 text-gray-600">Goal: Go beyond basic cuts and add professional polish with audio, color, and text.</p>
+            
+            <div class="unit-card">
+                <h3 class="text-xl font-medium text-orange-600 mb-2">Unit 2.1: Sound Design and Mixing</h3>
+                <p class="mb-2 text-gray-700">What to learn: Sound is just as important as the video. A good video with bad audio is unwatchable.</p>
+                <div class="activity-item">
+                    <input type="checkbox" id="p2u1a1">
+                    <label for="p2u1a1" class="activity-content">
+                        <strong>Volume and Fades:</strong> Learn how to change the volume of a clip and fade it in or out.
+                        <ul>
+                            <li><strong>How to do it:</strong> In DaVinci Resolve, find the horizontal line on an audio clip. Click and drag it up or down to change the volume. Hover over the ends to create a fade.</li>
+                        </ul>
+                    </label>
+                </div>
+                <div class="activity-item">
+                    <input type="checkbox" id="p2u1a2">
+                    <label for="p2u1a2" class="activity-content">
+                        <strong>Adding Music and Sound Effects:</strong> Use royalty-free music to set the mood.
+                        <ul>
+                            <li><strong>How to do it:</strong> Download a music track from a site like <a href="https://pixabay.com/music/" target="_blank" class="link-text">Pixabay</a> and drag it onto your timeline on a new audio track.</li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+
+            <div class="unit-card">
+                <h3 class="text-xl font-medium text-orange-600 mb-2">Unit 2.2: Color Correction & Grading</h3>
+                <p class="mb-2 text-gray-700">What to learn: Fixing color issues and creating a specific cinematic look.</p>
+                <div class="activity-item">
+                    <input type="checkbox" id="p2u2a1">
+                    <label for="p2u2a1" class="activity-content">
+                        <strong>Color Correction (The "Fix" Part):</strong> Making sure all your shots have a consistent, natural look.
+                        <ul>
+                            <li><strong>Your first task:</strong> Use the "Color Wheels" panel to adjust the exposure and saturation of your video clips.</li>
+                        </ul>
+                    </label>
+                </div>
+                <div class="activity-item">
+                    <input type="checkbox" id="p2u2a2">
+                    <label for="p2u2a2" class="activity-content">
+                        <strong>Color Grading (The "Style" Part):</strong> Adding a creative style. Think of the warm tones in a Wes Anderson film or the cool tones in a sci-fi movie.
+                        <ul>
+                            <li><strong>YouTube Recommendation:</strong> Search for "color grading tutorial" by <a href="https://www.youtube.com/channel/UCi5gUuW9z6LqI_qg7xU2o4Q" target="_blank" class="link-text">Darren Roark</a> to get a professional introduction to the topic.</li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="unit-card">
+                <h3 class="text-xl font-medium text-orange-600 mb-2">Unit 2.3: Adding Text and Motion Graphics</h3>
+                <p class="mb-2 text-gray-700">What to learn: Making your titles and graphics more dynamic.</p>
+                <div class="activity-item">
+                    <input type="checkbox" id="p2u3a1">
+                    <label for="p2u3a1" class="activity-content">
+                        <strong>Simple Text Animation:</strong> Make text fly in or out of the screen.
+                        <ul>
+                            <li><strong>How to do it:</strong> Learn to use keyframes. A keyframe is like a bookmark for a specific setting at a specific time. Create a keyframe to set the starting position of your text, and a second one later to set its final position. The program will do the rest.</li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Phase 3: Advanced & Professional (6+ Months) -->
+        <div class="phase-card">
+            <h2 class="text-2xl font-semibold text-orange-700 mb-4">Phase 3: Advanced & Professional (6+ Months)</h2>
+            <p class="mb-4 text-gray-600">Goal: Master advanced techniques and learn how to turn your skills into a career.</p>
+
+            <div class="unit-card">
+                <h3 class="text-xl font-medium text-orange-600 mb-2">Unit 3.1: Advanced Techniques</h3>
+                <p class="mb-2 text-gray-700">What to learn: The skills that set you apart from other editors.</p>
+                <div class="activity-item">
+                    <input type="checkbox" id="p3u1a1">
+                    <label for="p3u1a1" class="activity-content">
+                        <strong>Advanced Transitions:</strong> Create seamless, professional transitions like L-cuts and J-cuts.
+                    </label>
+                </div>
+                <div class="activity-item">
+                    <input type="checkbox" id="p3u1a2">
+                    <label for="p3u1a2" class="activity-content">
+                        <strong>Visual Effects (VFX):</strong> Learn how to add visual effects.
+                        <ul>
+                            <li><strong>YouTube Recommendation:</strong> Search for "Fusion tutorial" or "After Effects tutorial" by channels like <a href="https://www.youtube.com/@IgnaceAleya" target="_blank" class="link-text">Ignace Aleya</a>.</li>
+                        </ul>
+                    </label>
+                </div>
+                <div class="activity-item">
+                    <input type="checkbox" id="p3u1a3">
+                    <label for="p3u1a3" class="activity-content">
+                        <strong>Speed Ramping:</strong> Learn how to slow down and speed up your footage for dramatic effect.
+                    </label>
+                </div>
+            </div>
+
+            <div class="unit-card">
+                <h3 class="text-xl font-medium text-orange-600 mb-2">Unit 3.2: Building Your Professional Career</h3>
+                <p class="mb-2 text-gray-700">What to learn: How to get paid for your new skills.</p>
+                <div class="activity-item">
+                    <input type="checkbox" id="p3u2a1">
+                    <label for="p3u2a1" class="activity-content">
+                        <strong>Develop Your Niche:</strong> Decide what kind of videos you enjoy editing the most (e.g., social media ads, short films, weddings, corporate videos, YouTube).
+                    </label>
+                </div>
+                <div class="activity-item">
+                    <input type="checkbox" id="p3u2a2">
+                    <label for="p3u2a2" class="activity-content">
+                        <strong>Build a Portfolio:</strong> Create a portfolio of your best work to show potential clients. A portfolio is a collection of your work, a showcase of your skills.
+                    </label>
+                </div>
+                <div class="activity-item">
+                    <input type="checkbox" id="p3u2a3">
+                    <label for="p3u2a3" class="activity-content">
+                        <strong>Find Your First Client:</strong> Start by offering your services to friends, family, or local businesses.
+                    </label>
+                </div>
+            </div>
+            
+            <!-- Gemini LLM Feature: Video Idea Generator -->
+            <div class="llm-feature-box">
+                <h4 class="font-semibold text-lg text-amber-800 mb-2">✨ Video Idea Generator ✨</h4>
+                <p class="text-sm text-gray-700 mb-2">Use this tool to get creative video concept suggestions for your projects!</p>
+                <input type="text" id="ideaInput" class="llm-input" placeholder="e.g., 'a day at the park with a dog'">
+                <button id="generateIdeaBtn" class="llm-button">Generate Idea</button>
+                <div id="ideaLoadingIndicator" class="loading-indicator">Generating ideas...</div>
+                <div id="ideaOutput" class="llm-output"></div>
+            </div>
+        </div>
+
+        <!-- Motivation & Notes -->
+        <div class="motivation-card">
+            <h2 class="text-xl font-semibold text-amber-700 mb-2">Important Notes & Motivation</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li><strong>Start with Free Software:</strong> DaVinci Resolve is an incredible tool and you do not need to pay for an expensive program to become a pro.</li>
+                <li><strong>Practice, Practice, Practice:</strong> Your editing muscle will only get stronger with every project you finish.</li>
+                <li><strong>Learn from Others:</strong> Don't try to learn everything on your own. There are thousands of amazing, free tutorials on YouTube.</li>
+                <li><strong>You are a storyteller:</strong> A good editor is a good storyteller. Your job is to make your audience feel something.</li>
+            </ul>
+        </div>
+
+    </div> <!-- End of container -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const storageKey = 'videoEditingProgress';
+
+            // Load progress from local storage
+            const savedProgress = JSON.parse(localStorage.getItem(storageKey)) || {};
+
+            checkboxes.forEach(checkbox => {
+                if (savedProgress[checkbox.id]) {
+                    checkbox.checked = true;
+                }
+                checkbox.addEventListener('change', (event) => {
+                    savedProgress[event.target.id] = event.target.checked;
+                    localStorage.setItem(storageKey, JSON.stringify(savedProgress));
+                });
+            });
+
+            // --- Gemini API Integration for Video Idea Generator ---
+            const ideaInput = document.getElementById('ideaInput');
+            const generateIdeaBtn = document.getElementById('generateIdeaBtn');
+            const ideaLoadingIndicator = document.getElementById('ideaLoadingIndicator');
+            const ideaOutput = document.getElementById('ideaOutput');
+
+            generateIdeaBtn.addEventListener('click', async () => {
+                const keywords = ideaInput.value.trim();
+                if (!keywords) {
+                    ideaOutput.textContent = "Please enter some keywords to generate a video idea.";
+                    return;
+                }
+
+                ideaLoadingIndicator.style.display = 'block';
+                ideaOutput.textContent = '';
+
+                const prompt = `Generate a unique and creative video concept for a short film or social media video based on the following keywords: "${keywords}". Include a brief description of the video's theme, setting, and potential emotional tone.`;
+                
+                const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
+                const payload = { contents: chatHistory };
+                const apiKey = "";
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+                let retries = 0;
+                const maxRetries = 3;
+                const baseDelay = 1000;
+
+                const fetchWithRetry = async () => {
+                    try {
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+                        if (response.status === 429 && retries < maxRetries) {
+                            const delay = baseDelay * Math.pow(2, retries);
+                            retries++;
+                            await new Promise(res => setTimeout(res, delay));
+                            return fetchWithRetry();
+                        }
+                        return response;
+                    } catch (error) {
+                         if (retries < maxRetries) {
+                            const delay = baseDelay * Math.pow(2, retries);
+                            retries++;
+                            await new Promise(res => setTimeout(res, delay));
+                            return fetchWithRetry();
+                        } else {
+                            throw error;
+                        }
+                    }
+                };
+                
+                try {
+                    const response = await fetchWithRetry();
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        ideaOutput.textContent = text;
+                    } else {
+                        ideaOutput.textContent = "Could not generate an idea. Please try again or refine your keywords.";
+                        console.error("Gemini API response structure unexpected:", result);
+                    }
+                } catch (error) {
+                    ideaOutput.textContent = "Error generating an idea. Please check your network connection or try again later.";
+                    console.error("Error calling Gemini API for video idea:", error);
+                } finally {
+                    ideaLoadingIndicator.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
